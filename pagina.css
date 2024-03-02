@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3e5fd;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    background-color: #470059;
+    color: #fff;
+    padding: 20px 0;
+}
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+.song-list {
+    padding: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.song {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.song h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #e91e63;
+}
+.song p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #333;
+}

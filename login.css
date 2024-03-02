@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px; 
+}
+
+.hearts-container {
+    position: absolute;
+    top: -50px;
+    left: 60;
+    right: 0;
+    animation: hearts-float 10s linear infinite;
+}
+
+.heart {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    transform: rotate(45deg);
+    animation: heart-float 3s ease-in-out infinite;
+    background-image: url('morado.png'); 
+    background-size: contain;
+}
+
+@keyframes heart-float {
+    0% {
+        transform: translateY(0) rotate(45deg);
+    }
+    50% {
+        transform: translateY(-50px) rotate(45deg);
+    }
+    100% {
+        transform: translateY(0) rotate(45deg);
+    }
+}
+
+@keyframes hearts-float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+button {
+    background-color: #ff6b6b;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff8b8b;
+}
+
+#message {
+    margin-top: 20px;
+    color: #333;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+}
