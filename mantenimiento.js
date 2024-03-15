@@ -1,3 +1,3 @@
 setTimeout(function(){
-    alert("JAHSJDAHJA CAISTE DEAH, dale al botón jsdhjs - AbelMR")
+    alert("PAGINA EN MANTENIMIENTO, MUACK - AbelMR")
 },4500)
