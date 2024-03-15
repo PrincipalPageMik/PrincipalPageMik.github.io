@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: #f2dede;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    color: #d9534f;
+}
+
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.figurita {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: #eee;
+    border: 2px solid #d9534f;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #d9534f;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.cerrarPopup {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.popup img {
+    max-width: 100%;
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c9302c;
+}
+
+
+.descripcion {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.figuritaContenedor {
+    position: relative;
+}
+
+.figuritaContenedor:hover .descripcion {
+    display: block;
+}
+
+.figuritaContenedor:hover .descripcion {
+    display: block;
+}
