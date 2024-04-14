@@ -18,3 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     typeWriter();
 });
+
+setTimeout(function(){
+    alert("Hay nueva cancion en MIKELAFY si llegas a ver hazmelo saber grcs tk - AbelMR")
+},1000)
