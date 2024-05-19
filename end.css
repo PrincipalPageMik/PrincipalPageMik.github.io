@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(33, 0, 52);
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+.neon2-text{
+    font-size: 3em;
+    color: yellow;
+    text-shadow: 0 0 5px rgba(247, 236, 39, 0.719),0 0 10px rgba(247, 236, 39, 0.719), 0 0 15px rgba(247, 236, 39, 0.719), 0 0 20px rgba(247, 236, 39, 0.719), 0 0 25px rgba(247, 236, 39, 0.719);
+    opacity: 0;
+    animation: neon-effect 2s ease-in-out forwards;
+    animation-delay: 1.5s 
+}
+
+@keyframes neon-effect {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
