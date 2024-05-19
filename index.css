@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(33, 0, 52);
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+.neon-text {
+    font-size: 3em;
+    color: #D300E5;
+    text-shadow: 0 0 5px rgba(211, 0, 229, 0.6), 0 0 10px rgba(211, 0, 229, 0.6), 0 0 15px rgba(211, 0, 229, 0.6), 0 0 20px rgba(211, 0, 229, 0.6), 0 0 25px rgba(211, 0, 229, 0.6);
+    opacity: 0;
+    animation: neon-effect 2s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+.subtid{
+    font-size: 1em;
+    color: #ffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 25px rgba(255, 255, 255, 0.6);
+    opacity: 0;
+    animation: neon-effect 2s ease-in-out forwards;
+    animation-delay: 2s
+}
+
+.start-btn{
+    opacity: 0;
+    animation: neon-effect 2s ease-in-out forwards;
+    animation-delay: 3.5s
+}
+
+@keyframes neon-effect {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.start-btn img {
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.start-btn img:hover {
+    transform: scale(1.1);
+}
+
+.hearts-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff6b6b;
+    border-radius: 50%;
+    animation: heart-float 4s ease-in-out infinite alternate;
+    opacity: 0.8;
+}
+
+@keyframes heart-float {
+    0% {
+        transform: translateY(0) rotate(45deg) scale(1);
+    }
+    100% {
+        transform: translateY(-200px) rotate(45deg) scale(1.2);
+        opacity: 0;
+    }
+}
